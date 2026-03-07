@@ -6,15 +6,21 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#navbar-greeting {
+/* //////////// */
+/* NAVBAR */
+/* //////////// */
+
+/* navbar icons */
+#navbar-icons {
     color: white;
     cursor: default
 }
 
-#navbar-greeting:hover {
-    color: rgb(103, 110, 200)
+#navbar-icons:hover {
+    color: rgba(255, 50, 187, 0.8)
 }
 
+/* navbar container for both icons and links */
 #navbar-item-container {
     justify-content: space-between;
     display: flex;
@@ -25,15 +31,18 @@
     border-bottom: 1px solid black;
 }
 
+/* container for navbar links */
 #navbar-item-list {
     display: flex;
     gap: 10px;
 }
 
+/* list items in the navbar link container */
 .navbar-items {
     list-style-type: none;
 } 
 
+/* links within the navbar list items */
 .navbar-links {
     text-decoration: none;
     color: white;
@@ -43,6 +52,168 @@
 }
 
 .navbar-links:hover {
-    color: rgb(103, 110, 200);
+    color: rgba(255, 50, 187, 0.8);
     background-color: #3a3a3a;
+}
+
+/* navbar icons (on the left) */
+.navbar-icon-links {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.2s ease;
+    padding: 8px 8px 0px 12px ;
+    border-radius: 10px;
+}
+
+#navbar-icons-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar-github-icon:hover {
+    fill: rgba(255, 50, 187, 0.8);
+}
+
+/* github icon */
+#navbar-github-icon {
+    fill: white;
+    width: 28px;
+    height: 28px;
+}
+
+#navbar-insta-icon:hover {
+    fill: rgba(255, 50, 187, 0.8);
+}
+
+/* github icon */
+#navbar-insta-icon {
+    fill: white;
+    width: 28px;
+    height: 28px;
+}
+
+/* //////////// */
+/* MAIN PAGE */
+/* //////////// */
+
+/* name on the welcome message */
+#welcome-container {
+    padding: 8% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#welcome-message {
+    color: white;
+    font-size: 55px;
+}
+
+/* small sub-heading of what I do */
+#about-message {
+    color: rgba(255, 50, 187, 0.8);
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+    font: 600;
+    font-size: 2rem;
+}
+
+/* ABOUT ME SECTION */
+
+/* smart hiker link in paragraph */
+#smart-hiker-link {
+    text-decoration: none;
+}
+
+/* container */
+#about-me-container {
+    padding-left: 7%;
+    font-size: 1.3rem;
+}
+
+/* heading */
+#about-me-subheading {
+    color: #ffffff5f;
+}
+
+/* para container */
+#about-me-para-container{
+    padding-top: 1.5%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    gap: 0px;
+}
+
+/* paragraph */
+.about-me-paragraph {
+    color: white;
+}
+
+/* coloured para words */
+.about-me-words {
+    color: rgba(255, 50, 187, 0.8);
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+}
+
+/* //////////// */
+/* TECH STACK */
+/* //////////// */
+
+#tech-stack {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tech-stack-header {
+    font-size: 1.3rem;
+    color: #ffffff5f;
+    padding-top: 4%;
+}
+
+#tech-stack-icon-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+#tech-stack-icon-container i {
+    color: white;
+    font-size: 78px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Python */
+.devicon-python-plain:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+}
+
+/* Flask */
+.devicon-flask-original:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+}
+
+/* JS */
+.devicon-javascript-plain:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+}
+
+/* HTML */
+.devicon-html5-plain:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+}
+
+/* CSS */
+.devicon-css3-plain:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
 }
