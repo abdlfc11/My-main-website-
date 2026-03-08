@@ -151,7 +151,7 @@ input, textarea {
 /* ABOUT ME SECTION */
 
 /* smart hiker link in paragraph */
-#main-page-smart-hiker-link {
+#main-page-crest-link {
     text-decoration: none;
 }
 
@@ -379,6 +379,7 @@ input, textarea {
     border-radius: 5px;
     background-color: #3a3a3a;
     color: white;
+    resize: none;
 }
 
 .contact-textarea:hover {
