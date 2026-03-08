@@ -21,8 +21,7 @@
                 <!-- page links side (the right) -->
                 <ul id="navbar-item-list">
                     <li class="navbar-items"> <a class="navbar-links" href="#projects">Projects</a></li>
-                    <li class="navbar-items"> <a class="navbar-links" href="#">CV</a></li>
-                    <li class="navbar-items"> <a class="navbar-links" href="#">Contact me</a></li>
+                    <li class="navbar-items"> <a class="navbar-links" href="#contact">Contact me</a></li>
                 </ul>
             </div>
         </div>
@@ -44,8 +43,8 @@
         </div>
         <div id="about-me-para-container">
                 <p class="about-me-paragraph">
-                    I'm a 17 year old developer based in Greater Manchester starting a degree in Computer Science. I created <a id="main-page-smart-hiker-link" class="about-me-words" href="https://github.com/abdlfc11/Smart-Hiker-A-Hiking-Route-Finder?tab=readme-ov-file#smart-hiker--hiking-route-finder">Smart-Hiker</a>,
-                    an open-source alternative to subscription based route makers with the ability to automatically generate a route through a custom <a id="main-page-Astar-algorithm-link" class="about-me-words" href="https://github.com/abdlfc11/Smart-Hiker-A-Hiking-Route-Finder/blob/main/README.md#the-a-algorithm">A* pathfinding algorithm</a>.
+                    I'm a 17 year old developer based in Greater Manchester starting a degree in Computer Science. I created <a id="main-page-smart-hiker-link" target="_blank" class="about-me-words" href="https://github.com/abdlfc11/Smart-Hiker-A-Hiking-Route-Finder?tab=readme-ov-file#smart-hiker--hiking-route-finder">Smart-Hiker</a>,
+                    an open-source alternative to subscription based route makers with the ability to automatically generate a route through a custom <a target="_blank" id="main-page-Astar-algorithm-link" class="about-me-words" href="https://github.com/abdlfc11/Smart-Hiker-A-Hiking-Route-Finder/blob/main/README.md#the-a-algorithm">A* pathfinding algorithm</a>.
                 </p>
                 <p class="about-me-paragraph">   
                     I'm always looking to solve people's problems by creating user-focused software.
@@ -128,6 +127,24 @@
         </div>
         
      </section>
+
+    <!-- ///////// -->
+    <!-- CONTACT SECTION -->
+    <!-- ///////// -->
+
+    <section id="contact">
+        <div id="contact-form-container">
+            <div id="contact-form-header-container">
+                <h1 id="contact-form-header">Contact Me !</h1>
+            </div>
+            <form id="contact-form" action="https://formspree.io/f/xlgpdbow" method="POST">
+                <input id="contact-name" class="contact-entries" type="text" name="name" placeholder="enter your name">
+                <input id="contact-email" class="contact-entries" type="email" name="email" placeholder="enter your email">
+                <textarea class="contact-textarea" name="message" placeholder="enter your message"></textarea>
+                <button class="contact-button" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 
     <!-- ///////// -->
     <!-- JAVASCRIPT LINKING -->

@@ -13,6 +13,11 @@ body {
     background-color: rgb(43, 43, 43)
 }
 
+input, textarea {
+    caret-color: rgba(255, 50, 187, 0.8);
+    padding: 10px 15px;
+}
+
 /* //////////// */
 /* SECTION MANAGEMENT */
 /* //////////// */
@@ -24,6 +29,11 @@ body {
 #projects {
     min-height: 100vh;
     padding-top: 8.5%;
+}
+
+#contact {
+    min-height: 100vh;
+    scroll-margin-top: 300px;
 }
 
 /* //////////// */
@@ -304,4 +314,99 @@ body {
 #project-heading {
     color: white;
     text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+}
+
+/* //////////// */
+/* CONTACT SECTION */
+/* //////////// */
+
+#contact-form-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+#contact-form-header {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 50, 187, 0.8);
+    margin-bottom: 3%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+    border: 1px solid rgba(255, 50, 187, 0.4);
+    outline: none;
+    border: 5px;
+}
+
+#contact-form input:hover, #contact-form textarea:hover {
+    border: 1px solid rgba(255, 50, 187, 0.4);
+    outline: none;
+    border: 5px;
+}
+
+.contact-entries {
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.contact-entries:hover {
+    border: 1px solid rgba(255, 50, 187, 0.4);
+    box-shadow: 0 0 8px rgba(255, 50, 187, 0.4);
+    border-radius: 5px;
+}
+
+.contact-entries:focus {
+    border: 1px solid rgba(255, 50, 187, 0.8);
+    box-shadow: 0 0 4px rgba(255, 50, 187, 0.8), 0 0 20px rgba(255, 50, 187, 0.8);
+    border-radius: 5px;
+}
+
+.contact-textarea {
+    height: 80px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.contact-textarea:hover {
+    border: 1px solid rgba(255, 50, 187, 0.4);
+    box-shadow: 0 0 8px rgba(255, 50, 187, 0.4);
+    border-radius: 5px;
+}
+
+.contact-textarea:focus {
+    border: 1px solid rgba(255, 50, 187, 0.8);
+    box-shadow: 0 0 4px rgba(255, 50, 187, 0.8), 0 0 20px rgba(255, 50, 187, 0.8);
+    border-radius: 5px;
+}
+
+.contact-button {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 50, 187, 0.8);
+    color: #FFFFFF;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.4s ease;
+}
+
+.contact-button:hover {
+    box-shadow: 0 0 4px rgba(255, 50, 187, 0.8), 0 0 5px rgba(255, 50, 187, 0.8);
+    transform: translateY(-3px);
+}
+
+.contact-button:active {
+    transform: translateY(3px);
+    box-shadow: none;
 }
