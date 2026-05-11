@@ -97,6 +97,10 @@ input, textarea {
     border-radius: 10px;
 }
 
+.navbar-icon-links {
+    pointer-events: none;
+}
+
 #navbar-icons-container {
     display: flex;
     flex-direction: row;
@@ -106,10 +110,16 @@ input, textarea {
     fill: white;
     width: 28px;
     height: 28px;
+    pointer-events: all;
 }   
 
 .navbar-icons:hover {
     fill: rgba(255, 50, 187, 0.8);
+}
+
+#navbar-x-icon {
+    width: 35px;
+    height: 35px;
 }
 
 /* //////////// */
@@ -141,6 +151,16 @@ input, textarea {
 /* smart hiker link in paragraph */
 #main-page-crest-link {
     text-decoration: none;
+    transition: 0.2s all;
+}
+
+#main-page-crest-link:hover {
+    transform: translateY(-3px);
+    display: inline-flex;
+}
+
+#main-page-crest-link:hover {
+    color: white;
 }
 
 #main-page-Astar-algorithm-link {
